@@ -1,0 +1,262 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+
+
+/* MAIN CONTAINER */
+
+.register-container{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: linear-gradient(to bottom right,#ccfbf1,#f0fdfa,#ffffff);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+
+/* BACKGROUND CIRCLES */
+
+.register-container::before{
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    background-color: rgba(94,234,212,0.25);
+
+    top: -80px;
+    left: -80px;
+}
+
+
+.register-container::after{
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    background-color: rgba(153,246,228,0.3);
+
+    bottom: -60px;
+    right: -60px;
+}
+
+
+
+/* REGISTER FORM */
+
+.register-form{
+    width: 100%;
+    max-width: 430px;
+
+    background: rgba(255,255,255,0.92);
+
+    backdrop-filter: blur(12px);
+
+    padding: 42px 36px;
+
+    border-radius: 28px;
+
+    box-shadow: 0px 12px 30px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    position: relative;
+
+    z-index: 1;
+
+    animation: fadeIn 0.7s ease;
+}
+
+
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+/* HEADING */
+
+.register-form h1{
+    text-align: center;
+
+    color: #134e4a;
+
+    font-size: 42px;
+
+    margin-bottom: 5px;
+}
+
+
+.register-form h1::after{
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    background: linear-gradient(to right,#5eead4,#2dd4bf);
+
+    margin: 12px auto 0px auto;
+
+    border-radius: 10px;
+}
+
+
+
+/* INPUTS */
+
+.register-form input{
+    padding: 15px 16px;
+
+    border-radius: 14px;
+
+    border: 1px solid #d1d5db;
+
+    background-color: #f8fafc;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+    box-shadow: inset 0px 1px 3px rgba(0,0,0,0.04);
+}
+
+
+.register-form input:focus{
+    border-color: #5eead4;
+
+    box-shadow: 0px 0px 8px rgba(94,234,212,0.4);
+
+    background-color: #ffffff;
+
+    transform: scale(1.01);
+}
+
+
+
+/* BUTTON */
+
+.register-form button{
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(to right,#5eead4,#99f6e4);
+
+    color: #134e4a;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0px 6px 18px rgba(94,234,212,0.3);
+}
+
+
+.register-form button:hover{
+    transform: translateY(-3px);
+
+    box-shadow: 0px 10px 24px rgba(94,234,212,0.4);
+
+    opacity: 0.95;
+}
+
+
+
+/* TEXT */
+
+.register-form p{
+    text-align: center;
+
+    color: #475569;
+
+    margin-top: 8px;
+
+    font-size: 15px;
+}
+
+
+.register-form a{
+    color: #0f766e;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.register-form a:hover{
+    color: #134e4a;
+
+    text-decoration: underline;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 600px){
+
+    .register-form{
+        padding: 32px 24px;
+    }
+
+    .register-form h1{
+        font-size: 34px;
+    }
+
+    .register-form input{
+        padding: 13px;
+    }
+
+    .register-form button{
+        padding: 13px;
+    }
+}

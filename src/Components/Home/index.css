@@ -1,0 +1,277 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+
+
+/* MAIN CONTAINER */
+
+.home-container{
+    min-height: 100vh;
+
+    padding: 40px 25px;
+
+    background: #f8fafc;
+}
+
+
+
+/* WELCOME SECTION */
+
+.welcome-box{
+    background-color: #ccfbf1;
+
+    padding: 50px 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.welcome-box h1{
+    font-size: 52px;
+
+    color: #134e4a;
+
+    margin-bottom: 15px;
+}
+
+
+.main-text{
+    font-size: 20px;
+
+    color: #115e59;
+
+    margin-bottom: 15px;
+}
+
+
+.sub-text{
+    font-size: 16px;
+
+    color: #475569;
+
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: auto auto 25px auto;
+}
+
+
+.welcome-box button{
+    padding: 12px 28px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #5eead4;
+
+    color: #134e4a;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.welcome-box button:hover{
+    transform: translateY(-2px);
+}
+
+
+
+/* JOB SECTION */
+
+.job-section{
+    margin-top: 20px;
+}
+
+
+.job-section h2{
+    text-align: center;
+
+    font-size: 34px;
+
+    color: #134e4a;
+
+    margin-bottom: 30px;
+}
+
+
+
+/* JOB CARDS */
+
+.job-cards{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+    gap: 22px;
+}
+
+
+.job-card{
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+
+    border-top: 4px solid #5eead4;
+
+    transition: 0.3s;
+}
+
+
+.job-card:hover{
+    transform: translateY(-4px);
+}
+
+
+.job-card h3{
+    color: #0f766e;
+
+    margin-bottom: 12px;
+
+    font-size: 22px;
+}
+
+
+.job-card p{
+    color: #64748b;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+
+/* WHY SECTION */
+
+.why-section{
+    margin-top: 60px;
+}
+
+
+.why-section h2{
+    text-align: center;
+
+    font-size: 34px;
+
+    color: #134e4a;
+
+    margin-bottom: 30px;
+}
+
+
+.why-cards{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+    gap: 22px;
+}
+
+
+.why-card{
+    background-color: #ffffff;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+
+    border: 1px solid #d1fae5;
+
+    transition: 0.3s;
+}
+
+
+.why-card:hover{
+    transform: translateY(-4px);
+}
+
+
+.why-card h3{
+    color: #0f766e;
+
+    margin-bottom: 12px;
+
+    font-size: 22px;
+}
+
+
+.why-card p{
+    color: #64748b;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px){
+
+    .welcome-box{
+        padding: 40px 25px;
+    }
+
+    .welcome-box h1{
+        font-size: 38px;
+    }
+
+    .main-text{
+        font-size: 18px;
+    }
+
+    .job-section h2,
+    .why-section h2{
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+
+    .home-container{
+        padding: 20px 15px;
+    }
+
+    .welcome-box h1{
+        font-size: 30px;
+    }
+
+    .sub-text{
+        font-size: 15px;
+    }
+
+    .job-card,
+    .why-card{
+        padding: 20px;
+    }
+
+    .job-card h3,
+    .why-card h3{
+        font-size: 20px;
+    }
+}
